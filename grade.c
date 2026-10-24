@@ -1,24 +1,29 @@
 #include<stdio.h>
 int main(){
-    int n;
-    printf("enter your number");
-    scanf("%d",&n);
-    if((n<=100)&&(n>=90)){
-        printf("%d pass with grade A",n);
+int marks;
+printf("enter your marks");
+scanf("%d",&marks);
+if(marks<=100){
+    if(marks>=90){
+        printf("marks greatre than 90 si garde =A %d",marks);
     }
-    else if((n<90)&&(n>=80)){
-        printf("%d pass with grade B",n);
+    else if(marks>=80&&marks<90){
+        printf(" grade b",marks);
+
     }
-    else if((n>=60)&&(n<=79)){
-        printf("%d pass with grade c",n);
+    else if(marks>=70&&marks<80){
+        printf("grade b",marks);
     }
-     else if((n>=0)&&(n<60)){
-        printf("%d fail",n);
-     }
+    else if(marks>=60&&marks<70){
+        printf("grade d",marks);
+    }
     else{
-        printf("%d error",n);
+        printf("fail",marks);
     }
-   
-    
-    return 0;
+
+}
+else{
+    printf("error beause you entre up to 100 beause exam beciome onky 100 marks",marks);
+}
+return 0;
 }
